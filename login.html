@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".\stylelogin.css">
+    <title>Eventrack</title>
+</head>
+<body class="body-login">
+    <header class="header-login">
+        <nav class="menu">
+            <input type="text">
+            <a href="index.html">Eventos</a>
+            <a href="#profissional">Viagens</a>
+            <a href="#profissional">Compras</a>
+            <a href="login.html">Minha Conta</a>
+        </nav>
+    </header>
+    <div class="div-login">
+        <img src="img/verticalLogo.png" class="img-login">
+        <form class="form-login">
+            <label for="login">Login</label>
+            <input id="login" type="email" placeholder="Digite seu email">
+            <label for="senha">Senha</label>
+            <input id="senha" type="password" placeholder="Senha">
+            <a href="changepass.html">Esqueceu a senha?</a>
+            <div class="div-login-button">
+                <button type="button">Login</button>
+                <button id="signup" type="button" onclick="window.location.href='signup.html'">Cadastre-se</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: Poppins;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.default-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border: rgb(255, 255, 255) solid 2px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.default-button:hover{
+    color: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(89, 2, 72, 1) 0%, rgba(143, 0, 189, 1) 29%, rgba(255, 136, 0, 1) 100%);
+    ;
+}
+
+.header-principal {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 5rem;
+    width: 100%;
+}
+
+.header-principal input {
+    margin-top: 8px;
+    margin-left: 5px;
+    width: 80%;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(73, 1, 59);
+    border: rgba(89, 2, 72,0.6) solid 2px;
+    border-radius: 10px;
+}
+
+.header-principal img {
+    margin-left: 5px;
+}
+
+.img-input{
+    display: flex;
+    width: 110%;
+    margin-left: 3vw;
+    justify-content: end;
+    align-items: end;
+}
+
+.menu {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+    margin-right: 3vw;
+    padding-right: 5px;
+    margin-top: 1rem;
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+    gap: 20px;
+}
+
+.menu a{
+    position: relative;
+    align-items: start;
+    justify-content: center;
+    text-align: start;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    height: 20px;
+    width: 80px;
+    max-width: 80%;
+    padding-bottom: 0.5rem;
+}
+
+.menu button {
+    height: 40px;
+}
+
+.menu button:hover {
+    color: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(89, 2, 72, 1) 0%, rgba(143, 0, 189, 1) 29%, rgba(255, 136, 0, 1) 100%);
+    ;
+}
+
+.menu a:hover {
+    color: rgb(220, 125, 255);
+}
+
+.menu a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(220, 125, 255);
+    transition: all 0.5s ease;
+}
+
+.menu a:hover::after {
+    width: 80%;
+}
+
+.top-img{
+    z-index: 1;
+    background-image: url("img/viagemimgeditada4.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 620px;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.travel-input{
+    overflow: visible;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 60px;
+    width: 900px;
+    bottom: 50px;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.travel-details{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    text-align: center;
+    gap: 10px;
+}
+
+.travel-details span{
+    color: white;
+    font-size: 32px;
+}
+
+.travel-input button{
+    margin-bottom: 8.8px ;
+    width: 10vw;
+    height: 43px;
+}
+
+.travel-input button::before{
+    content: "Vamos viajar!";
+}
+
+@media screen and (max-width: 1300px) {
+    .travel-input button::before{
+        content: "Viajar!";
+    }
+}
+
+.travel-input-date{
+    border: rgba(255, 255, 255, 0.6) solid 2px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    margin-bottom: 7px ;
+    width: 100px;
+    height: 42px;
+    border-radius: 10px;
+}
+
+.travel-input-text{
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    font-size: 16px;
+    padding-left: 5px;
+    border: rgba(255, 255, 255, 0.6) solid 2px;
+    margin-bottom: 7px ;
+    width: 280px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.travel-input-text::placeholder{
+    color: white;
+}
+
+.travel-input-date::placeholder{
+    color: white;
+}
+
+
+.impact-text{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    padding-bottom: 13%;
+    padding-right: 0.5%;
+    color: white;
+
+}
+
+.impact-text span{
+    font-family: poppins;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 35px;
+    height: 55px;
+    border-bottom: 1px solid white;
+    color: white;
+    font-weight: 130;
+}
+
+.impact-text h1{
+    font-size: 35px;
+    margin: 10px;
+}
+
+.trending {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 380px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(89, 2, 72, 1) 0%, rgba(143, 0, 189, 1) 26%, rgba(247, 127, 13, 1) 77%, rgba(255, 136, 0, 1) 100%);
+    margin-top: 10px;
+}
+
+.trending-item {
+    border-radius: 7%;
+    margin: 5px;
+    height: 360px;
+    background-color: rgb(73, 0, 59);
+}
+
+.signup-modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.signup-modal-content{
+    position: relative;
+    background-color: #ffffff;
+    margin: 8% auto;
+    padding: 20px;
+    border: 3px solid rgb(89, 2, 72);
+    border-radius: 10px;
+    width: 30%;
+    height: 65%;
+}
+
+.terms-span{
+    width: 90%;
+    font-size: 12px;
+}
+
+.signup-modal-header{
+    height: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 10px;
+    left: 5px;
+}
+
+.signup-modal-header h3{
+    font-size: 23px;
+}
+
+.signup-modal-header span{
+    margin-left: 5.5px;
+    font-size: 20px;
+}
+
+.span-close{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    font-size: 25px;
+    right: 23px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.form-signup {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    margin-left: 10px;
+    padding-top: 10px;
+    width: 100%;
+    height: 85%;
+    gap: 7px;
+}
+
+.input-field{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.input-field label{
+    font-size: 15px;
+}
+
+.form-signup input{
+    border: rgb(89, 2, 72,0.6) solid 2px;
+    border-radius: 10px;
+    height: 30px;
+    width: 220%;
+    font-weight: 300;
+    padding-left: 5px ;
+    color: black;
+}
+
+.form-signup button{
+    margin-top: 4px;
+    height: 40px;
+    width: 95%;
+    right: 3px;
+    color: rgb(126, 0, 101);
+    font-weight: 500;
+    border: rgb(89, 2, 72,0.6) solid 2px;
+}
+
+.form-signup button:hover {
+    color: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(89, 2, 72, 1) 0%, rgba(143, 0, 189, 1) 29%, rgba(255, 136, 0, 1) 100%);
+    ;
+}
+
+.login-action{
+    font-size: 13px;
+    margin-top: 8px;
+    text-align: center;
+}
+
+.login-action a{
+    text-decoration: underline;
+    color: rgb(143, 0, 189);
+    cursor: pointer;
+}

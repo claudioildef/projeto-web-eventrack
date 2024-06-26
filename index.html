@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".\styles.css">
+    <title>Eventrack</title>
+</head>
+
+<body>
+    <header class="header-principal">
+        <div class="img-input">
+            <img src="./img/horizontalLogo.png" height="60px">
+            <input type="text">
+        </div>
+        <nav class="menu">
+            <a href="#pessoal">Eventos</a>
+            <a href="#profissional">Viagens</a>
+            <button id="btn-create-account" class="default-button" onclick="openModal()">Cadastre-se</button>
+        </nav>
+        <div></div>
+    </header>
+    <div class="top-img">
+        <div class="impact-text">
+            <span><h1>Você,</h1>onde<h1>você</h1> quiser!</span>
+        </div>
+        <div class="travel-input">
+            <div class="travel-details">
+                <input id="travelLoc" class="travel-input-text" type="text" placeholder="De onde sairemos...">
+                <span>></span>
+                <input id="travelLoc" class="travel-input-text" type="text" placeholder="Para onde vamos...">
+                <input id="tavelDate"class="travel-input-date" type="date">
+            </div>
+            <button class="default-button"></button>
+        </div>
+    </div>
+    <div id="signupModal" class="signup-modal">
+        <div class="signup-modal-content">
+                <div class="signup-modal-header">
+                    <h3>Cadastre-se</h3><span>e bora pro mundão!</span>
+                </div>
+            <span class="span-close" onclick="closeModal()">x</span>
+            <form class="form-signup">
+                <div class="input-field">
+                    <label for="name">Nome</label>
+                    <input id="name" type="text" placeholder="Nome Completo">
+                </div>
+                <div class="input-field">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="Email">
+                </div>
+                <div class="input-field">
+                    <label for="pass">Senha</label>
+                    <input id="pass" type="password" placeholder="Senha">
+                </div>
+                <div class="input-field">
+                    <label for="passConfirm">Confirmar Senha</label>
+                    <input id="passConfirm" type="password" placeholder="Confirme sua senha">
+                </div>
+                <span class="terms-span">Ao me cadastrar, concordo com os Termos e Condições de uso do Eventrack</span>
+                <button id="btn-signup" type="button" class="default-button">Cadastrar</button>
+            </form>
+            <hr>
+            <div class="login-action">Já possui conta? <a>Faça o login!</a></div>
+        </div>
+    </div>
+    <div class="trending">
+        <div class="trending-item"></div>
+        <div class="trending-item"></div>
+        <div class="trending-item"></div>
+    </div>
+    <section class="menu"></section>
+    <section class="options"></section>
+</body>
+<script src="script.js"></script>
+</html>
